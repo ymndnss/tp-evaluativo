@@ -8,7 +8,7 @@ import { CarruselComponent } from './components/carrusel/carrusel.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { Seccion1Component } from './pages/seccion1/seccion1.component';
 
-
+import {MatSliderModule} from '@angular/material/slider';
 @NgModule({
   declarations: [
     CardComponent,
@@ -18,7 +18,8 @@ import { Seccion1Component } from './pages/seccion1/seccion1.component';
   ],
   imports: [
     CommonModule,
-    InicioRoutingModule
+    InicioRoutingModule,
+    MatSliderModule
   ]
 })
 export class InicioModule { }

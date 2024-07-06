@@ -1,1 +1,17 @@
-<p>card works!</p>
+
+<div class="container">
+    <div class="row">
+        <div class="card" style="width: 18rem;" *ngFor="let i of info" class="contenido">
+            <img src="{{i.imagen}}" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">{{i.nombre}} </h5>
+              <p class="card-text">{{i.precio}} </p>
+              <mat-slider>
+                <input matSliderThumb>
+              </mat-slider>
+              <a href="#" class="btn btn-primary">comprar</a>
+            </div>
+        </div>
+    </div>
+</div>
+
