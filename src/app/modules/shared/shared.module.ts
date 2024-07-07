@@ -9,6 +9,9 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 
+import {MatDividerModule} from '@angular/material/divider';
+
+
 import { AppRoutingModule } from 'src/app/app-routing.module';
 
 @NgModule({
@@ -21,7 +24,9 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
     AppRoutingModule,
     MatToolbarModule, 
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatDividerModule
+  
   
   ],
   exports: [
@@ -29,7 +34,8 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
     NavbarComponent,
     MatToolbarModule, 
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatDividerModule
   ]
 })
 export class SharedModule { }

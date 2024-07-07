@@ -1,14 +1,17 @@
+<!--navegador-->
 <mat-toolbar>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <button id="menuSecciones" class="btn btn-secondary" mat-icon-button class="example-icon" >
       <mat-icon>menu</mat-icon>
     </button>
-    <span>My App</span>
+ 
+    <button class="button" class="btn btn-secondary" routerLink="/inicio">My App</button>
     <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-      <mat-icon>favorite</mat-icon>
-    </button>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-      <mat-icon>share</mat-icon>
-    </button>
-  </mat-toolbar>
+
+    <!-- Inicio de sesión y formulario de registro -->
+    
+        <button mat-menu-item class="btn btn-secondary" routerLink="/registro">Registrarse</button>
+       <br> <button mat-menu-item class="btn btn-secondary" routerLink="/inicio-sesion">Iniciar sesión</button>
+   
+</mat-toolbar>
   
+   

@@ -4,7 +4,7 @@ import { InicioComponent } from './modules/inicio/pages/inicio/inicio.component'
 
 const routes: Routes = [
    // Ruta común -> 1 solo componente
-   // Ruta común -> 1 solo componente
+   
    {
     path:"",component:InicioComponent
   },
@@ -16,6 +16,9 @@ const routes: Routes = [
   {
     path:"",loadChildren:()=>import('./modules/inicio/inicio.module').then(m=>m.InicioModule)
   },
+  {
+    path:"",loadChildren:()=>import('./modules/autentificacion/autentificacion.module').then(m=>m.AutentificacionModule)
+  }
 ];
 
 @NgModule({

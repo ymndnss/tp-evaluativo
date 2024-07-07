@@ -1,15 +1,13 @@
 
-<div class="container">
+<div class="container col-8">
     <div class="row">
-        <div class="card" style="width: 18rem;" *ngFor="let i of info" class="contenido">
+        <div class="card"  *ngFor="let i of info" class="contenido">
             <img src="{{i.imagen}}" class="card-img-top" alt="">
             <div class="card-body">
               <h5 class="card-title">{{i.nombre}} </h5>
-              <p class="card-text">{{i.precio}} </p>
-              <mat-slider>
-                <input matSliderThumb>
-              </mat-slider>
-              <a href="#" class="btn btn-primary">comprar</a>
+              <p class="card-text">&#36;{{i.precio}} </p>
+           
+              <a href="#" class="btn btn-secondary" routerLink="/inicio-sesion">comprar</a>
             </div>
         </div>
     </div>
