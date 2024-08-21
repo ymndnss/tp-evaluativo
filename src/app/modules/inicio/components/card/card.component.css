@@ -60,3 +60,18 @@ body{
     transform: scale(1.05);
 }
     
+.parallax{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_xoSQgR91O1fCNqXGFVLNS3HNeB1MA51Rcw&s');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+}
+.caja{
+    height: 900px;
+    background-color: #fff;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
