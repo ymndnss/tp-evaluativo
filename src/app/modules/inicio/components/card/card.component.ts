@@ -8,6 +8,8 @@ import { Productos } from 'src/app/models/productos';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
+
+
   public info: Productos[];
 
   constructor(){
