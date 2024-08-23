@@ -1,48 +1,48 @@
+<!--parallax-->
 <div class="parallax"></div>
-<div class="container col-8">
-    <div class="row caja">
-        <div class="card"  *ngFor="let i of info" class="contenido">
+<!--carousel-->
+<div id="carouselExampleFade" class="carousel slide carousel-fade">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container col-8">
+        <div class="row caja">
+          <div class="card" class="contenido">
+            <img src="https://th.bing.com/th/id/OIP.O0qLGUPm87CcbGJxpGielAAAAA?rs=1&pid=ImgDetMain" class="card-img-top"
+              alt="">
+            <div class="card-body">
+              <h5 class="card-title">adidas rosa</h5>
+              <p class="card-text">&#36;5 </p>
+              <a href="#" class="btn btn-secondary" routerLink="/inicio-sesion">comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="carousel-item" *ngFor="let i of info">
+      <div class="container col-8">
+        <div class="row caja">
+          <div class="card" class="contenido">
             <img src="{{i.imagen}}" class="card-img-top" alt="">
             <div class="card-body">
-              <h5 class="card-title" >{{i.nombre}} </h5>
+              <h5 class="card-title">{{i.nombre}} </h5>
               <p class="card-text">&#36;{{i.precio}} </p>
               <a href="#" class="btn btn-secondary" routerLink="/inicio-sesion">comprar</a>
             </div>
+          </div>
         </div>
+      </div>
+      
     </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
 </div>
 <div class="parallax"></div>
-
-<div id="carouselExampleFade" class="carousel slide carousel-fade">
-    <div class="carousel-inner" >
-      <div class="carousel-item" *ngFor="let i of info">
-       
-        <div class="container col-8">
-            <div class="row caja">
-                <div class="card" class="contenido">
-                    <img src="{{i.imagen}}" class="card-img-top" alt="">
-                    <div class="card-body">
-                      <h5 class="card-title" >{{i.nombre}} </h5>
-                      <p class="card-text">&#36;{{i.precio}} </p>
-                      <a href="#" class="btn btn-secondary" routerLink="/inicio-sesion">comprar</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        
-      </div>
-      <div class="carousel-item">
-
-    </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>

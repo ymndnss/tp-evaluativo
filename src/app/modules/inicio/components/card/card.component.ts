@@ -16,12 +16,6 @@ export class CardComponent {
     this.info = [
       {
         id: "",
-        nombre: "Adidas rosa",
-        precio: 5,
-        imagen: "https://th.bing.com/th/id/OIP.O0qLGUPm87CcbGJxpGielAAAAA?rs=1&pid=ImgDetMain"
-      },
-      {
-        id: "",
         nombre: "Adidas salmon",
         precio: 7,
         imagen: "https://http2.mlstatic.com/tenis-adidas-neo-mujer-envio-gratis-a-todo-el-pais-zy1-D_NQ_NP_897572-MCO27825870459_072018-F.jpg"

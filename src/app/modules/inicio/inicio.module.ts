@@ -8,6 +8,7 @@ import { CarruselComponent } from './components/carrusel/carrusel.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { Seccion1Component } from './pages/seccion1/seccion1.component';
 
+//rutas de angular
 import {MatSliderModule} from '@angular/material/slider';
 @NgModule({
   declarations: [
@@ -23,3 +24,6 @@ import {MatSliderModule} from '@angular/material/slider';
   ]
 })
 export class InicioModule { }
+
+
+
